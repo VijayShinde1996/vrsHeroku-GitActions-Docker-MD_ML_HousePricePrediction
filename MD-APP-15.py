@@ -28,6 +28,5 @@ def predict_api():
     output=model.predict(final_input)[0]
     return render_template("home.html",prediction_text="The House Price Prediction is: {}".format(output))
 
-
 if __name__ == '__main__':
     APP15.run(debug=True)
